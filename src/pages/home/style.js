@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bg1 from '../../statics/bg-1.png';
+import bg1 from '../../statics/bg-1.jpg';
 import music from '../../statics/music.png';
 import nomusic from '../../statics/nomusic.png';
 import { keyframes } from 'styled-components';
@@ -13,8 +13,6 @@ export const fadeIn = keyframes`
     opacity: 1;
 }
 `
-
-
 export const HomeWrapper=styled.div`
 width: 100vw;
 height: 100vh;

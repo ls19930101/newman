@@ -4,7 +4,18 @@ import music from '../../statics/music.png';
 import nomusic from '../../statics/nomusic.png';
 import { keyframes } from 'styled-components';
 
-
+export const Move = keyframes`
+0%{
+    top: 12vh;
+ }
+ 
+ 50%{
+    top: 6vh;
+ }
+ 100%{
+    top: 12vh;
+ }
+`
 
 export const fadeIn = keyframes`
 0%{
@@ -138,13 +149,28 @@ animation-delay: 28s;
 `
 
 export const ShareBtn=styled.button`
+opacity:0;
 position: absolute;
 bottom:12vh;
 left:50%;
 width:80vw;
 margin-left:-40vw;  
-
-.btn{
+animation: 0.5s ${fadeIn} ease-in;
+animation-fill-mode: forwards;
+animation-delay: 29s;
+.sharebtn{
 width:100%;
+height: 100%;
+}
+`
+export const Hand=styled.div`
+position:absolute;
+top:6vh;
+right:4vw;
+width:12vw;
+animation: 2s ${Move} ease-in infinite;
+.hand{
+width:100%;
+height:100%;
 }
 `
