@@ -155,6 +155,7 @@ bottom:12vh;
 left:50%;
 width:80vw;
 margin-left:-40vw;  
+padding:0;
 animation: 0.5s ${fadeIn} ease-in;
 animation-fill-mode: forwards;
 animation-delay: 29s;

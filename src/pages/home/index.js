@@ -15,7 +15,7 @@ class Home extends PureComponent{
     constructor(props){
         super(props);
         this.state={
-            isPlay:false
+            isPlay:true
         }
     }
     
@@ -25,10 +25,10 @@ class Home extends PureComponent{
                    <HomeBg>
                        <Music
                              onClick={this.handleMusic}
-                              className={this.state.isPlay? 'nomusic':''}>
+                              className={!this.state.isPlay? 'nomusic':''}>
                        </Music>
                        {
-                           !this.state.isPlay?  <audio loop autoPlay="autoplay" src={music1} id="music1"></audio>
+                           this.state.isPlay?  <audio loop autoPlay="autoplay" src={music1} id="music1"></audio>
                                  : null
                        }
                       
