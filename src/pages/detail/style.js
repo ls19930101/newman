@@ -148,10 +148,10 @@ animation-delay: 28s;
 }
 `
 
-export const ShareBtn=styled.button`
+export const ShareBtn=styled.div`
 opacity: 0;
 position: absolute;
-bottom:12vh;
+bottom: 12%;
 left: 50%;
 width: 80vw;
 margin-left:-40vw;  
