@@ -51,7 +51,7 @@ class Home extends PureComponent{
         let count=storage.getItem("count")||1;
         count++;
         storage.setItem("count",count);
-        document.title=`我是第${count}位重温入团誓词的团员青年count`;
+        document.title=`我是第${count}位重温入团誓词的团员青年`;
     }
 
 
