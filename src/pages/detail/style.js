@@ -149,18 +149,18 @@ animation-delay: 28s;
 `
 
 export const ShareBtn=styled.button`
-opacity:0;
+opacity: 0;
 position: absolute;
 bottom:12vh;
-left:50%;
-width:80vw;
+left: 50%;
+width: 80vw;
 margin-left:-40vw;  
 padding:0;
 animation: 0.5s ${fadeIn} ease-in;
 animation-fill-mode: forwards;
 animation-delay: 29s;
 .sharebtn{
-width:100%;
+width: 100%;
 height: 100%;
 }
 `
